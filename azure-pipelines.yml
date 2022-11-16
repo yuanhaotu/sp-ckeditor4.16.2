@@ -17,4 +17,7 @@ steps:
 
 - script: |
     npm publish
-  displayName: 'npm publish'
+- task: npmAuthenticate@0
+  inputs:
+    workingFile: '/,npmrc'
+  displayName: 'npm publish pipeline'
