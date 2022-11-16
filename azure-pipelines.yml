@@ -21,6 +21,6 @@ steps:
 - task: Npm@1
   inputs:
     command: 'publish'
-    workingDir: '/sp-ckeditor4.16.2'
+    workingDir: '/home/vsts/work/1/s/'
     publishRegistry: 'useFeed'
     publishFeed: '86ec7889-a365-4cd1-90df-6e18cc2ea59f'
