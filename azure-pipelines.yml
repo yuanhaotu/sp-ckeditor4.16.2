@@ -14,10 +14,6 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-- task: npmAuthenticate@0
-  inputs:
-    workingFile: '/.npmrc'
-  displayName: 'npm publish pipeline'
 - task: Npm@1
   inputs:
     command: 'publish'
